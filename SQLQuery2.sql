@@ -1,5 +1,6 @@
-CREATE TABLE countries( 
-COUNTRY_ID varchar(2),
-COUNTRY_NAME varchar(40),
-REGION_ID decimal(10,0)
+CREATE TABLE IF NOT EXISTS countries ( 
+COUNTRY_ID varchar(2) NOT NULL,
+COUNTRY_NAME varchar(40) NOT NULL,
+REGION_ID decimal(10,0) NOT NULL,
+UNIQUE(COUNTRY_ID)
 );
